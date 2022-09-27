@@ -1,0 +1,27 @@
+<div class="row">
+<div class="col-3">
+<button><fa-icon icon="play"></fa-icon></button>
+</div>
+<div class="col-6 slider-container center">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[0].img" class="img-container" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+                <h3>Rollin Brummette</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[1].img" class="img-container" alt="Random second slide">
+            </div>
+            <div class="carousel-caption">
+                <h3>Rollin Brummette</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+</div>
